@@ -1,3 +1,57 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-weight: 400;
+    src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-weight: 700;
+    src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/roboto-v47-cyrillic_latin-100.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v47-cyrillic_latin-regular.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/roboto-v47-cyrillic_latin-600.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v47-cyrillic_latin-700.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/roboto-v47-cyrillic_latin-800.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/roboto-v47-cyrillic_latin-900.woff2') format('woff2');
+}
 :root {
     --brand-color: rgba(43, 127, 255, 1);
     --brand-color-dark: rgba(0, 0, 0, 1);
@@ -7,8 +61,12 @@
     --color-gray: rgba(116, 114, 114, 1);
 }
 /* Base */
-body {
+body, body button {
     color: var(--brand-color-dark);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 ul {
@@ -17,6 +75,13 @@ ul {
 
 a {
     text-decoration: none;
+    font-style: normal;
+}
+
+.play {
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
 }
 
 /* Button */
@@ -28,6 +93,7 @@ a {
     border-radius: 32px;
     border: 2px solid var(--brand-color);
     cursor: pointer;
+    font-weight: 600;
 }
 
 .primary-button:hover {
@@ -38,22 +104,32 @@ a {
 /* Link */
 .link {
     color: var(--main-color-dark);
+    font-weight: 400;
+    font-size: 18px;
 }
 .link:hover {
     color: var(--brand-color);
+    font-weight: 700;
 }
 
 /* Hero section */
 .hero-title {
-    color: var(--brand-color)
+    color: var(--brand-color);
+    font-size: 140px;
+    line-height: 0.8;
 }
 
 .section-title {
     color: var(--main-color-dark);
+    line-height: 1.1;
 }
 
 .section-title .accent {
     color: var(--brand-color);
+}
+
+.center {
+    text-align: center;
 }
 
 .bold {
@@ -78,4 +154,8 @@ a {
 footer {
     background-color: var(--primary-color-dark);
     color: var(--primary-color-white);
+}
+
+.why-we-item {
+    line-height: 1.1;
 }
