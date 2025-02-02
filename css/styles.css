@@ -1,8 +1,10 @@
 :root {
     --brand-color: rgba(43, 127, 255, 1);
     --brand-color-dark: rgba(0, 0, 0, 1);
-    --primary-color-dark: rgba(1, 28, 68, 1);
+    --primary-color-dark: rgba(1, 28, 68,1);
+    --primary-color-dark-border: rgba(1, 31, 74, 1);
     --primary-color-white: rgba(255, 255, 255, 1);
+    --color-gray: rgba(116, 114, 114, 1);
 }
 /* Base */
 body {
@@ -11,6 +13,10 @@ body {
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Button */
@@ -32,7 +38,6 @@ ul {
 /* Link */
 .link {
     color: var(--main-color-dark);
-    text-decoration: none;
 }
 .link:hover {
     color: var(--brand-color);
@@ -53,4 +58,24 @@ ul {
 
 .bold {
     font-weight: 800;
+}
+
+.policy {
+    color: var(--color-gray);
+}
+.policy .link {
+    text-decoration: underline;
+}
+.form-section {
+    border: 4px solid var(--primary-color-dark-border);
+    background: var(--primary-color-dark);
+    color: var(--primary-color-white);
+    width: 422px;
+    height: 428px;
+    border-radius: 32px;
+}
+
+footer {
+    background-color: var(--primary-color-dark);
+    color: var(--primary-color-white);
 }
