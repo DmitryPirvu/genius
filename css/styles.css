@@ -61,12 +61,20 @@
     --color-gray: rgba(116, 114, 114, 1);
 }
 /* Base */
+* {
+    box-sizing: border-box;
+}
 body, body button {
     color: var(--brand-color-dark);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
 }
 
 ul {
@@ -84,6 +92,17 @@ a {
     font-size: 64px;
 }
 
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1268px;
+    padding: 0 24px;
+}
+
 /* Button */
 
 .primary-button {
@@ -94,11 +113,12 @@ a {
     border: 2px solid var(--brand-color);
     cursor: pointer;
     font-weight: 600;
+    padding: 0 32px;
 }
 
 .primary-button:hover {
-    color: black;
-    background-color: transparent;
+    color: var(--primary-color-dark);
+    background-color: var(--primary-color-white);
 }
 
 /* Link */
@@ -109,14 +129,19 @@ a {
 }
 .link:hover {
     color: var(--brand-color);
-    font-weight: 700;
+    text-shadow: 0 0 .65px var(--brand-color), 0 0 .65px var(--brand-color);
+    /* font-weight: 700; */
 }
 
 /* Hero section */
+.hero-section {
+    padding-top: 122px;
+}
 .hero-title {
     color: var(--brand-color);
     font-size: 140px;
     line-height: 0.8;
+    margin-bottom: 0;
 }
 
 .section-title {
