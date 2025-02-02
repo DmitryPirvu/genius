@@ -45,9 +45,9 @@
           тіла.
         </p>
         <p>
-          B <span>Beauty Zone</span> ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
-          косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість.
-          З нами краса назавжди!
+          B <span class="bold">Beauty Zone</span> ми гарантуємо найвищі стандарти якості та приємний
+          сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу
+          та молодість. З нами краса назавжди!
         </p>
         <div>
           <img src="./images/image_1578.jpg" alt="before" />
@@ -97,11 +97,41 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div>
-            <p>Запишіться <span>безкоштовно</span> та отримайте подарунок</p>
-            <p>Ваше ім'я та прізвище</p>
-            <p>Ваша електронна пошта</p>
-            <button type="button" class="primary-button">Записатись безкоштовно</button>
+          <div class="section-title">
+            <p>Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок</p>
+            <form>
+              <div>
+                <label class="visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+                <input
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder="Ваше ім'я та прізвище"
+                  required
+                />
+              </div>
+              <div>
+                <label class="visually-hidden" for="user-phone">Ваш номер телефону</label>
+                <input
+                  type="text"
+                  name="user-phone"
+                  id="user-phone"
+                  placeholder="Ваш номер телефону"
+                  required
+                />
+              </div>
+              <div>
+                <label class="visually-hidden" for="user-email">Ваша електронна пошта</label>
+                <input
+                  type="text"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Ваша електронна пошта"
+                  required
+                />
+              </div>
+              <button type="submit" class="primary-button">Записатись безкоштовно</button>
+            </form>
             <p>
               Натискаючи на кнопку я погоджуюсь
               <a href="#">з політикою конфіденційності</a>

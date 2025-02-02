@@ -50,3 +50,7 @@ ul {
 .section-title .accent {
     color: var(--brand-color);
 }
+
+.bold {
+    font-weight: 800;
+}
