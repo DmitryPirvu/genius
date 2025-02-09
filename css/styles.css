@@ -1,18 +1,19 @@
 @import url(fonts.css);
 :root {
     --brand-color: rgba(43, 127, 255, 1);
-    --brand-color-dark: rgba(0, 0, 0, 1);
     --primary-color-dark: rgba(1, 28, 68,1);
     --primary-color-dark-border: rgba(1, 31, 74, 1);
     --primary-color-white: rgba(255, 255, 255, 1);
     --color-gray: rgba(116, 114, 114, 1);
+    --color-title-gray: rgba(74, 74, 74, 1);
+    --color-title-blue: rgba(1, 28, 68, 1);
 }
 /* Base */
 * {
     box-sizing: border-box;
 }
 body, body button {
-    color: var(--brand-color-dark);
+    color: var(--color-title-blue);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -21,11 +22,14 @@ body, body button {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -37,6 +41,7 @@ a {
     font-family: Play, sans-serif;
     font-weight: 700;
     font-size: 64px;
+    width: 550px;
 }
 
 .section {
@@ -48,6 +53,87 @@ a {
     width: 100%;
     max-width: 1268px;
     padding: 0 24px;
+    /* background-color: lightgray; */
+}
+
+/* Header */
+
+.header-container {
+    display: flex;
+    padding: 32px 0;
+    gap: 40px;
+}
+.header-nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.header-menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 56px;
+}
+
+/* Why we */
+
+.why-we-container {
+    text-align: center;
+}
+.why-we-list {
+    display: flex;
+    gap: 56px;
+    padding-top: 48px;
+    justify-content: center;
+}
+.why-we-item {
+    background-color: lightblue;
+    border-radius: 32px;
+    padding: 24px 32px;
+    line-height: 1.3;
+    max-width: 330px;
+}
+.why-we-item h3 {
+    padding-bottom: 8px;
+}
+
+/* Services */
+
+.services-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding-top: 48px;
+}
+.service-item {
+    border: 1px solid lightgray;
+    border-radius: 120px 4px;
+    background: linear-gradient(180deg, rgba(1, 28, 68, 0.00) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, #011C44 101.39%);
+    width: 344px;
+    height: 456px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 32px;
+    color: var(--primary-color-white);
+    font-size: 22px;
+}
+.service-item p {
+    flex-basis: 150px;
+}
+
+/* Find us */
+
+.find-us-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Button */
@@ -81,14 +167,22 @@ a {
 }
 
 /* Hero section */
-.hero-section {
-    padding-top: 122px;
+.hero-container {
+    padding: 17px 0 127px 106px;
 }
 .hero-title {
     color: var(--brand-color);
     font-size: 140px;
     line-height: 0.8;
-    margin-bottom: 0;
+    margin-bottom: 40px;
+}
+.hero-text-title {
+    font-size: 12px;
+    padding-left: 20px;
+    color: var(--color-title-gray);
+}
+.hero-container .primary-button {
+    margin-bottom: 14px;
 }
 
 .section-title {
@@ -102,10 +196,67 @@ a {
 
 .center {
     text-align: center;
+    width: auto;
 }
 
 .bold {
     font-weight: 800;
+}
+
+/* About */
+
+.about-container {
+    display: flex;
+}
+.about-content {
+    flex-basis: 709px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 28px;
+    padding-top: 41px;
+}
+.about-content p {
+    font-size: 22px;
+    line-height: 1.7;
+    color: var(--color-title-blue);
+}
+
+.about-images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-grow: 1;
+}
+
+.about-images img {
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 310px;
+    position: relative;
+}
+
+.star1 {
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+.star2 {
+    position: absolute;
+    right: 21px;
+    top: 300px;
+}
+.star3 {
+    position: absolute;
+    left: 121px;
+    top: 334px;
+}
+
+.second-image {
+    left: 168px;
 }
 
 .policy {
@@ -126,8 +277,4 @@ a {
 footer {
     background-color: var(--primary-color-dark);
     color: var(--primary-color-white);
-}
-
-.why-we-item {
-    line-height: 1.1;
 }

@@ -9,149 +9,213 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="#">
-            <img src="./images/logo.svg" alt="logo" />
-          </a>
-          <ul>
-            <li><a class="link" href="#about-section">Про нас</a></li>
-            <li><a class="link" href="#why-we-section">Чому ми</a></li>
-            <li><a class="link" href="#our-service-section">Наші процедури</a></li>
-            <li><a class="link" href="#contacts-section">Контакти</a></li>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="#">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+            <ul class="header-menu">
+              <li><a class="link" href="#about-section">Про нас</a></li>
+              <li><a class="link" href="#why-we-section">Чому ми</a></li>
+              <li><a class="link" href="#our-service-section">Наші процедури</a></li>
+              <li><a class="link" href="#contacts-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="header-links">
+            <li>
+              <a href="#"><img src="./images/telephone-icon.svg" alt="telephone" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/facebook-icon.svg" alt="facebook" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/instagram-icon.svg" alt="instagram" /></a>
+            </li>
           </ul>
-        </nav>
-        <ul>
-          <li>
-            <a href="#"><img src="./images/telephone-icon.svg" alt="telephone" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./images/facebook-icon.svg" alt="facebook" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./images/instagram-icon.svg" alt="instagram" /></a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <p>Косметологічна клініка</p>
-          <h1 class="hero-title play">Beauty <br />Zone</h1>
-          <button class="primary-button" type="button">Замовити дзвінок</button>
-          <p>Запишись та отримай безкоштовну <br />консультацію нашого косметолога</p>
+          <div class="hero-container">
+            <p>Косметологічна клініка</p>
+            <h1 class="hero-title play">Beauty <br />Zone</h1>
+            <button class="primary-button" type="button">Замовити дзвінок</button>
+            <p class="hero-text-title">
+              Запишись та отримай безкоштовну <br />консультацію нашого косметолога
+            </p>
+          </div>
         </div>
       </section>
       <section class="section" id="about-section">
         <div class="container">
-          <h2 class="section-title play">
-            Перевтілюйтесь в <span class="accent">Beauty Zone!</span>
-          </h2>
-          <p>
-            Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою обличчя
-            та тіла.
-          </p>
-          <p>
-            B <span class="bold">Beauty Zone</span> ми гарантуємо найвищі стандарти якості та
-            приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати
-            свою красу та молодість. З нами краса назавжди!
-          </p>
-          <div>
-            <img src="./images/image_1578.jpg" alt="before" />
-            <img src="./images/image_1579.jpg" alt="after" />
+          <div class="about-container">
+            <div class="about-content">
+              <h2 class="section-title play">
+                Перевтілюйтесь в <span class="accent">Beauty Zone!</span>
+              </h2>
+              <p>
+                Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою
+                обличчя та тіла.
+              </p>
+              <p>
+                B <span class="bold">Beauty Zone</span> ми гарантуємо найвищі стандарти якості та
+                приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам
+                підтримувати свою красу та молодість. З нами краса назавжди!
+              </p>
+            </div>
+            <div class="about-images">
+              <svg
+                class="star1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+              >
+                <path
+                  d="M27.3205 0L23.5024 15.6641L34.641 27.3205L18.9769 23.5024L7.32051 34.641L11.1386 18.9769L0 7.32051L15.6641 11.1386L27.3205 0Z"
+                  fill="#2B7FFF"
+                />
+              </svg>
+              <svg
+                class="star2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="16"
+                viewBox="0 0 15 16"
+                fill="none"
+              >
+                <path
+                  d="M4.48249 0.567997L8.55906 5.56521L14.9653 4.82356L9.96813 8.90013L10.7098 15.3064L6.63321 10.3092L0.226925 11.0508L5.22413 6.97428L4.48249 0.567997Z"
+                  fill="#747272"
+                />
+              </svg>
+              <svg
+                class="star3"
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                viewBox="0 0 56 56"
+                fill="none"
+              >
+                <path
+                  d="M11.7128 0L30.3631 17.8217L55.4256 11.7128L37.6039 30.3631L43.7128 55.4256L25.0625 37.6039L0 43.7128L17.8217 25.0625L11.7128 0Z"
+                  fill="#011F4A"
+                />
+              </svg>
+              <img src="./images/image_1578.jpg" alt="before" />
+              <img class="second-image" src="./images/image_1579.jpg" alt="after" />
+            </div>
           </div>
         </div>
       </section>
       <section class="section" id="why-we-section">
         <div class="container">
-          <h2 class="section-title center play">
-            Чому люди <span class="accent">обирають нас</span>
-          </h2>
-          <ul>
-            <li class="why-we-item">
-              <article>
-                <h3><img src="./images/game-icon.svg" alt="game" /></h3>
-                <p>Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5 років</p>
-              </article>
-            </li>
-            <li class="why-we-item">
-              <article>
-                <h3><img src="./images/building-icon.svg" alt="building" /></h3>
-                <p>Використовуємо тільки професійне обладнання та косметику, перевірену часом</p>
-              </article>
-            </li>
-            <li class="why-we-item">
-              <article>
-                <h3><img src="./images/crown-icon.svg" alt="crown" /></h3>
-                <p>Наша мета - підкреслити переваги та приховати недоліки, а не переробити</p>
-              </article>
-            </li>
-          </ul>
+          <div class="why-we-container">
+            <h2 class="section-title center play">
+              Чому люди<br /><span class="accent">обирають нас</span>
+            </h2>
+            <ul class="why-we-list">
+              <li class="why-we-item">
+                <article>
+                  <h3><img src="./images/game-icon.svg" alt="game" /></h3>
+                  <p>Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5 років</p>
+                </article>
+              </li>
+              <li class="why-we-item">
+                <article>
+                  <h3><img src="./images/building-icon.svg" alt="building" /></h3>
+                  <p>Використовуємо тільки професійне обладнання та косметику, перевірену часом</p>
+                </article>
+              </li>
+              <li class="why-we-item">
+                <article>
+                  <h3><img src="./images/crown-icon.svg" alt="crown" /></h3>
+                  <p>Наша мета - підкреслити переваги та приховати недоліки, а не переробити</p>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section" id="our-service-section">
         <div class="container">
-          <h2 class="section-title center play">Наші <span class="accent">процедури</span></h2>
-          <ul>
-            <li><img src="./images/image_1580.jpg" alt="1580" /></li>
-            <li><img src="./images/image_1570.jpg" alt="1570" /></li>
-            <li><img src="./images/image_1574.jpg" alt="1574" /></li>
-          </ul>
+          <div class="services-container">
+            <h2 class="section-title center play">Наші <span class="accent">процедури</span></h2>
+            <ul class="services-list">
+              <li class="service-item">
+                <!-- <img src="./images/image_1580.jpg" alt="1580" /> -->
+                <p>Маски для обличчя</p>
+              </li>
+              <li class="service-item">
+                <!-- <img src="./images/image_1570.jpg" alt="1570" /> -->
+                <p>Ін'єкції для обличчя</p>
+              </li>
+              <li class="service-item">
+                <!-- <img src="./images/image_1574.jpg" alt="1574" /> -->
+                <p>Очищення обличчя</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="contacts-section">
         <div class="container">
           <h2 class="section-title center play">Як нас <span class="accent">знайти</span></h2>
-          <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12606.027589284342!2d144.9721985!3d-37.825017450000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b1b46283b9%3A0x33718f02306f1e54!2sNational%20Gallery%20of%20Victoria!5e0!3m2!1sen!2sau!4v1737250347809!5m2!1sen!2sau"
-              width="605"
-              height="481"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div class="section-title form-section">
-            <p>Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок</p>
-            <form>
-              <div>
-                <label class="visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
-                <input
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                  placeholder="Ваше ім'я та прізвище"
-                  required
-                />
-              </div>
-              <div>
-                <label class="visually-hidden" for="user-phone">Ваш номер телефону</label>
-                <input
-                  type="text"
-                  name="user-phone"
-                  id="user-phone"
-                  placeholder="Ваш номер телефону"
-                  required
-                />
-              </div>
-              <div>
-                <label class="visually-hidden" for="user-email">Ваша електронна пошта</label>
-                <input
-                  type="text"
-                  name="user-email"
-                  id="user-email"
-                  placeholder="Ваша електронна пошта"
-                  required
-                />
-              </div>
-              <button type="submit" class="primary-button">Записатись безкоштовно</button>
-            </form>
-            <p class="policy">
-              Натискаючи на кнопку я погоджуюсь
-              <a href="#" class="link">з політикою конфіденційності</a>
-            </p>
+          <div class="find-us-container">
+            <div class="map-wraper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12606.027589284342!2d144.9721985!3d-37.825017450000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b1b46283b9%3A0x33718f02306f1e54!2sNational%20Gallery%20of%20Victoria!5e0!3m2!1sen!2sau!4v1737250347809!5m2!1sen!2sau"
+                width="605"
+                height="481"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="section-title form-section">
+              <p>Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок</p>
+              <form>
+                <div>
+                  <label class="visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+                  <input
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder="Ваше ім'я та прізвище"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="visually-hidden" for="user-phone">Ваш номер телефону</label>
+                  <input
+                    type="text"
+                    name="user-phone"
+                    id="user-phone"
+                    placeholder="Ваш номер телефону"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="visually-hidden" for="user-email">Ваша електронна пошта</label>
+                  <input
+                    type="text"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Ваша електронна пошта"
+                    required
+                  />
+                </div>
+                <button type="submit" class="primary-button">Записатись безкоштовно</button>
+              </form>
+              <p class="policy">
+                Натискаючи на кнопку я погоджуюсь
+                <a href="#" class="link">з політикою конфіденційності</a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
