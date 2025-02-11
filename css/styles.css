@@ -80,7 +80,12 @@ a {
     justify-content: center;
     gap: 56px;
 }
-
+.header-icons {
+    fill: var(--primary-color-dark);
+}
+.header-icons:hover {
+    fill: var(--brand-color);
+}
 /* Why we */
 
 .why-we-container {
@@ -101,6 +106,9 @@ a {
 }
 .why-we-item h3 {
     padding-bottom: 8px;
+}
+.why-we-icons {
+    fill: var(--brand-color);
 }
 
 /* Services */
@@ -239,6 +247,12 @@ a {
 .bold {
     font-weight: 800;
 }
+.hero-section {
+    background-image: url(../images/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
 
 /* About */
 
@@ -280,16 +294,19 @@ a {
     position: absolute;
     right: 0;
     top: 40px;
+    fill: var(--brand-color);
 }
 .star2 {
     position: absolute;
     right: 21px;
     top: 300px;
+    fill: var(--color-gray);
 }
 .star3 {
     position: absolute;
     left: 121px;
     top: 334px;
+    fill: var(--primary-color-dark-border);
 }
 
 .second-image {
@@ -331,6 +348,16 @@ footer {
 }
 .footer-policy {
     font-size: 13px;
+}
+.footer {
+    background-image: url(../images/footer_background.png);
+    background-repeat: repeat-x;
+}
+.footer-icons {
+    fill: var(--primary-color-white);
+}
+.footer-icons:hover {
+    fill: var(--brand-color);
 }
 
 .visually-hidden {
