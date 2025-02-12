@@ -58,6 +58,12 @@ a {
 
 /* Header */
 
+.header {
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+}
 .header-container {
     display: flex;
     padding: 32px 0;
@@ -281,6 +287,7 @@ a {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+    padding-top: 110px;
 }
 
 /* About */
@@ -350,15 +357,29 @@ a {
     text-decoration: underline;
 }
 /* Footer */
-footer {
+.footer {
     background-color: var(--primary-color-dark);
     color: var(--primary-color-white);
+    background-image: url(../images/footer_background.png);
+    background-repeat: repeat-x;
+    position: relative;
+}
+.footer::after {
+    content: '';
+    background-image: url(../images/decor-footer.png);
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .footer-container {
     display: flex;
     justify-content: space-between;
     gap: 40px;
     padding: 56px 0;
+    position: relative;
+    z-index: 2;
 }
 .footer-container a {
     font-size: 16px;
@@ -376,10 +397,6 @@ footer {
 }
 .footer-policy {
     font-size: 13px;
-}
-.footer {
-    background-image: url(../images/footer_background.png);
-    background-repeat: repeat-x;
 }
 .footer-icons {
     fill: var(--primary-color-white);
