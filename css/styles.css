@@ -223,6 +223,12 @@ a {
 .carousel-arrow:hover {
     fill: var(--primary-color-white);
 }
+.carousel-wrapper {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
 /* Link */
 .link {
     color: var(--main-color-dark);
