@@ -61,6 +61,8 @@ a {
 
 .header {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(5px);
@@ -159,6 +161,7 @@ a {
     font-size: 22px;
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s;
 }
 .service-item p {
     flex-basis: 150px;
@@ -167,6 +170,10 @@ a {
     position: absolute;
     z-index: -1;
     top: 0;
+}
+.service-item:hover {
+    transform: scale(1.05);
+    z-index: 1;
 }
 
 /* Find us */
@@ -249,6 +256,9 @@ a {
     border: 1px solid var(--primary-color-white);
     cursor: pointer;
 }
+.carousel-button.next {
+    transform: rotate(180deg);
+}
 .carousel-arrow {
     fill: var(--primary-color-dark);
 }
@@ -266,6 +276,8 @@ a {
     color: var(--main-color-dark);
     font-weight: 400;
     font-size: 18px;
+    transition-property: color;
+    transition-duration: 0.2s;
 }
 .link:hover {
     color: var(--brand-color);
@@ -452,10 +464,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    transition: opacity 0.3s, visibility 0.3s;
 }
 .modal {
-    width: 723px;
-    height: 681px;
+    width: 100%;
+    max-width: 723px;
+    height: 100%;
+    max-height: 681px;
     background-color: var(--color-title-blue);
     border-radius: 48px;
     position: relative;
