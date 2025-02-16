@@ -283,8 +283,50 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="modal">
+        <form class="modal-form" action="">
+          <h2 class="center play">Замовити дзвінок</h2>
+          <p class="form-title center">
+            Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок
+          </p>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="name">Ваше ім'я та прізвище</label>
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Ваше ім'я та прізвище"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="tel">Ваш номер телефону</label>
+            <input
+              class="form-input"
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Ваш номер телефону"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="email">Ваша електронна пошта</label>
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Ваша електронна пошта"
+            />
+          </div>
+          <button type="submit" class="primary-button modal-btn-open">
+            Записатись безкоштовно
+          </button>
+          <p class="policy">
+            Натискаючи на кнопку я погоджуюсь <a href="#">з політикою конфіденційності</a>
+          </p>
+        </form>
         <button class="btn-close modal-bnt-close" type="button">X</button>
       </div>
     </div>
