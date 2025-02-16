@@ -1,0 +1,84 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal {
+    width: 100%;
+    max-width: 723px;
+    height: 100%;
+    max-height: 681px;
+    background-color: var(--color-title-blue);
+    border-radius: 48px;
+    position: relative;
+    padding: 42px 144px;
+    color: var(--primary-color-white);
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-form h2 {
+    margin-bottom: 40px;
+}
+
+.modal-form .policy {
+    font-size: 12px;
+    padding-bottom: 42px;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+}
+
+.modal-form {
+    max-width: 310px;
+    text-align: center;
+}
+
+.form-label {
+    display: block;
+    font-size: 13px;
+    line-height: normal;
+    transition: transform 0.3s;
+}
+
+.form-input {
+    padding: 16px 32px;
+    border-radius: 32px;
+    border: 2px solid var(--color-gray);
+    width: 100%;
+    background-color: transparent;
+}
+
+.form-input::placeholder,
+.form-input {
+    color: var(--primary-color-white);
+}
+
+.form-input:focus {
+    outline: none;
+    background-color: var(--color-gray);
+}
+
+.form-field {
+    margin-bottom: 32px;
+}

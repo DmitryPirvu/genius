@@ -1,0 +1,12 @@
+.link {
+    color: var(--main-color-dark);
+    font-weight: 400;
+    font-size: 18px;
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+.link:hover {
+    color: var(--brand-color);
+    text-shadow: 0 0 .65px var(--brand-color), 0 0 .65px var(--brand-color);
+}

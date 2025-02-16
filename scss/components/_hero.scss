@@ -1,0 +1,65 @@
+.play {
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    width: 550px;
+    line-height: normal;
+}
+
+.section {
+    padding: 48px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1268px;
+    padding: 0 24px;
+}
+.hero-container {
+    padding: 17px 0 127px 106px;
+}
+
+.hero-title {
+    color: var(--brand-color);
+    font-size: 140px;
+    line-height: 0.8;
+    margin-bottom: 40px;
+}
+
+.hero-text-title {
+    font-size: 12px;
+    padding-left: 20px;
+    color: var(--color-title-gray);
+}
+
+.hero-container .primary-button {
+    margin-bottom: 14px;
+}
+
+.section-title {
+    color: var(--main-color-dark);
+    line-height: 1.1;
+}
+
+.accent {
+    color: var(--brand-color);
+}
+
+.center {
+    text-align: center;
+    width: auto;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.hero-section {
+    background-image: url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-top: 110px;
+}

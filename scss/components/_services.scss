@@ -1,0 +1,39 @@
+.services-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding-top: 48px;
+}
+
+.service-item {
+    border: 1px solid lightgray;
+    border-radius: 4px 120px;
+    background: linear-gradient(180deg, rgba(1, 28, 68, 0.00) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, #011C44 101.39%);
+    width: 344px;
+    height: 456px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 32px;
+    color: var(--primary-color-white);
+    font-size: 22px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.service-item p {
+    flex-basis: 150px;
+}
+
+.service-item img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
