@@ -7,12 +7,12 @@
 
 @import './components/buttons';
 @import './components/links';
-@import './components/header';
-@import './components/why-we';
-@import './components/services';
-@import './components/find-us';
+@import './layouts/header';
+@import './layouts/why-we';
+@import './layouts/services';
+@import './layouts/find-us';
 @import './components/carousel';
-@import './components/about';
-@import './components/hero';
-@import './components/footer';
-@import './components/modal';
+@import './layouts/about';
+@import './layouts/hero';
+@import './layouts/footer';
+@import './layouts/modal';
