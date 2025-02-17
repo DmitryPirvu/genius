@@ -1,0 +1,29 @@
+.form-section {
+
+    .policy,
+    .link {
+        font-size: 12px;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 600;
+        padding-bottom: 32px;
+    }
+
+    &__item {
+        width: 310px;
+        height: 52px;
+        border-radius: 32px;
+        font-size: 13px;
+        padding-left: 33px;
+        margin-bottom: 16px;
+        border: 2px solid var(--color-gray);
+        background: transparent;
+    }
+
+    &__item::placeholder,
+    &__item {
+        color: var(--primary-color-white);
+    }
+}

@@ -1,0 +1,9 @@
+.policy {
+    color: var(--color-gray);
+    width: 213px;
+    margin: auto;
+
+    & > .link {
+        text-decoration: underline;
+    }
+}

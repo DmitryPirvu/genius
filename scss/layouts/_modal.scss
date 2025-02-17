@@ -1,3 +1,67 @@
+.modal {
+    width: 100%;
+    max-width: 723px;
+    height: 100%;
+    max-height: 681px;
+    background-color: var(--color-title-blue);
+    border-radius: 48px;
+    position: relative;
+    padding: 42px 144px;
+    color: var(--primary-color-white);
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+
+    &__form {
+        max-width: 310px;
+        text-align: center;
+    }
+
+    &__form h2 {
+        margin-bottom: 40px;
+    }
+
+    &__form > .policy {
+        font-size: 12px;
+        padding-bottom: 42px;
+    }
+
+    &__label {
+        display: block;
+        font-size: 13px;
+        line-height: normal;
+        transition: transform 0.3s;
+    }
+
+    &__input {
+        padding: 16px 32px;
+        border-radius: 32px;
+        border: 2px solid var(--color-gray);
+        width: 100%;
+        background-color: transparent;
+    }
+
+    &__input::placeholder,
+    &__input {
+        color: var(--primary-color-white);
+    }
+
+    &__input:focus {
+        outline: none;
+        background-color: var(--color-gray);
+    }
+
+    &__field {
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -13,30 +77,6 @@
     transition: opacity 0.3s, visibility 0.3s;
 }
 
-.modal {
-    width: 100%;
-    max-width: 723px;
-    height: 100%;
-    max-height: 681px;
-    background-color: var(--color-title-blue);
-    border-radius: 48px;
-    position: relative;
-    padding: 42px 144px;
-    color: var(--primary-color-white);
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.modal-form h2 {
-    margin-bottom: 40px;
-}
-
-.modal-form .policy {
-    font-size: 12px;
-    padding-bottom: 42px;
-}
-
 .backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -47,38 +87,4 @@
     position: absolute;
     top: 42px;
     right: 42px;
-}
-
-.modal-form {
-    max-width: 310px;
-    text-align: center;
-}
-
-.form-label {
-    display: block;
-    font-size: 13px;
-    line-height: normal;
-    transition: transform 0.3s;
-}
-
-.form-input {
-    padding: 16px 32px;
-    border-radius: 32px;
-    border: 2px solid var(--color-gray);
-    width: 100%;
-    background-color: transparent;
-}
-
-.form-input::placeholder,
-.form-input {
-    color: var(--primary-color-white);
-}
-
-.form-input:focus {
-    outline: none;
-    background-color: var(--color-gray);
-}
-
-.form-field {
-    margin-bottom: 32px;
 }

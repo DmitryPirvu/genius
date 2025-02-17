@@ -7,10 +7,10 @@
     cursor: pointer;
     font-weight: 600;
     padding: 0 32px;
-    margin-bottom: 8px;
-}
+    margin-bottom: 14px;
 
-.primary-button:hover {
-    color: var(--primary-color-dark);
-    background-color: var(--primary-color-white);
+    &:hover {
+        color: var(--primary-color-dark);
+        background-color: var(--primary-color-white);
+    }
 }

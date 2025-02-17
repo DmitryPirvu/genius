@@ -1,0 +1,10 @@
+.section {
+    padding: 48px 0;
+    position: relative;
+    z-index: 2;
+
+    &__title {
+        color: var(--main-color-dark);
+        line-height: 1.1;
+    }
+}
