@@ -7,9 +7,16 @@ body button {
     color: var(--color-title-blue);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.5;
     margin: 0;
+}
+
+@media screen and (min-width: $bp-tablet) {
+    body,
+    body button {
+        font-size: 18px;
+    }
 }
 
 h1,

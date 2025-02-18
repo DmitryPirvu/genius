@@ -7,3 +7,24 @@
     white-space: nowrap;
     width: 1px;
 }
+
+.play {
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    width: 550px;
+    line-height: normal;
+}
+
+.accent {
+    color: var(--brand-color);
+}
+
+.center {
+    text-align: center;
+    width: auto;
+}
+
+.bold {
+    font-weight: 800;
+}
