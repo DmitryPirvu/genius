@@ -1,8 +1,14 @@
 .hero-section {
     background-image: url(../images/hero-bg.png);
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: right;
+    background-size: cover;
     padding-top: 110px;
+
+    @media screen and (min-width: $bp-tablet) {
+        background-position: right top;
+        height: 100%;
+    }
 
     &__container {
         text-align: center;
