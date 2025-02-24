@@ -1,7 +1,7 @@
 .section {
     padding: 0;
     position: relative;
-    z-index: 2;
+    padding: 20px 0;
 
     @media screen and (min-width: $bp-descktop) {
         padding: 48px 0;
