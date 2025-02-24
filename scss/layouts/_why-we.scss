@@ -5,7 +5,7 @@
         text-align: center;
     }
 
-    &__container::after {
+    &__container::before {
         content: '';
         background-image: url(../images/why-bg.png);
         background-size: auto;
@@ -23,6 +23,7 @@
 
     &__wrapper {
         position: relative;
+        z-index: 2;
     }
 
     &__list {
